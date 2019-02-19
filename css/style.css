@@ -1,0 +1,751 @@
+@font-face {
+        /*font-family: "bree";
+        src: url(font/bree-serif/BreeSerif-Regular.otf);
+        font-weight: normal;
+}
+/* FONT FACE */
+/* Appelle les polices de la page */
+
+/*GLOBAL */
+}
+
+*
+{
+    box-sizing: border-box;
+}
+
+html
+{
+    font-size: 62.5%;
+}
+body
+{
+
+    font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+    padding:0;
+}
+
+
+p
+{
+    font-size: 2rem;
+}
+
+
+li > a
+{
+    color: white;
+
+}
+
+li > a:hover
+{
+    color: #18BC9C;
+}
+/* Balises et class appelés à plusieurs endroits dans la page */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+{
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+}
+
+.partie
+{
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 3em;
+}
+
+header
+{
+    background-color:#2C544D;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+    height: 100px;
+}
+
+nav
+{
+    position: absolute;
+    top: 20%;
+    left:20%;
+    right:20%;
+    text-align: center;
+}
+.logo-name
+{
+    display: inline-block;
+    float: left;
+}
+
+.img-logo
+{
+  color: white;
+  width: 60px;
+  height: 60px;
+}
+
+.name-nav
+{
+    color: white;
+    font-size: 2em;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.name-nav:hover
+{
+    color: #18BC9C;
+}
+
+
+.menu
+{
+    display: inline-block;
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    margin: 0;
+    padding:0;
+    position: relative;
+    top: 17px;
+    right: 30px
+}
+
+li, ul
+{
+    list-style-type: none;
+}
+
+
+.li-menu
+{
+    display: inline-block;
+    margin: 0 10px;
+}
+
+
+#presentation
+{
+    padding-top: 150px;
+    padding-bottom: 150px;
+    text-align: center;
+    color: white;
+    background: #18BC9C
+}
+
+
+#presentation .intro-text .name-header
+{
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 4em;
+    font-weight: 700;
+    display: block;
+    text-transform: uppercase;
+}
+
+
+#presentation .intro-text .skill
+{
+    font-size: 2em;
+    font-weight: 300;
+}
+
+#presentation hr.star-light
+{
+  border-color: white;
+}
+hr.star-light,
+hr.star-primary
+{
+    max-width: 250px;
+    margin: 25px auto 30px;
+    padding: 0;
+    text-align: center;
+    border: none;
+    border-top: solid 5px;
+}
+
+hr.star-light
+{
+    border-color: white;
+}
+
+.img-fluid
+{
+    width: 300px;
+    height: 300px;
+    margin-bottom: 50px;
+}
+
+#portfolios > .star-light
+{
+    border-color: black;
+}
+
+#contact > .star-light
+{
+    border-color: black;
+}
+
+
+main
+{
+    text-align: center;
+
+}
+
+#espace
+{
+    height: 110px;
+}
+
+#espace2
+{
+    height: 55px;
+}
+#moi> #espace
+{
+    height: 60px;
+}
+section
+{
+
+}
+
+.categories
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.9rem;
+    text-transform: uppercase;
+    border: none;
+    margin: 50px 0 50px 0;
+    padding: 0
+}
+
+#menuToggle
+{
+  display: none;
+}
+.categories > li
+{
+    display: flex;
+    width: 160px;
+    color: white;
+    background-color: #18BC9C;
+    justify-content: center;
+    border-radius: 25px;
+    margin :  10px;
+    padding: 10px 0 10px 0;
+
+
+}
+
+.categories > li:hover
+{
+    animation: bounce 0.3s  infinite alternate;
+}
+
+@keyframes bounce
+{
+     from {transform: translateY(0px);}
+     to  {transform: translateY(-20px);}
+
+}
+
+.categories > li > a:hover
+{
+    color: white;
+}
+
+.portfolio
+{
+    display: block;
+}
+
+.table-image:nth-child(odd)
+{
+    display: inline-block;
+
+}
+
+.table-image:nth-child(even)
+{
+    display: inline-block;
+
+}
+
+.table-image > a
+{
+    color: #18BC9C;
+}
+
+.table-image > a:hover
+{
+    color: white;
+
+}
+
+.table-image a img
+{
+    position: relative;
+
+}
+.table-image a div
+{
+    position: absolute;
+    z-index: 1;
+    width: 420px;
+    height: 220px;
+
+}
+
+.table-image a div:hover
+{
+    background-color:#18BC9C;
+    transition-duration: 1s;
+    color: white;
+}
+
+
+
+.table-image:hover
+{
+    background-color:#18BC9C;
+    transition-duration: 1s;
+    color: white;
+}
+
+.table-image a div i
+{
+    margin-top: 25%;
+    opacity: 0;
+}
+
+.table-image a div:hover i
+{
+    opacity: 1;
+    transition-duration: 1s;
+}
+
+i:hover
+{
+    color: white;
+}
+
+#moi
+{
+
+    margin-top: 100px;
+    padding: 50px 0 100px 0;
+    background-color: #18BC9C;
+    color: white;
+}
+
+.row
+{
+    display: flex;
+    justify-content: center;
+}
+
+.resume
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+}
+
+.resume p
+{
+  display: flex;
+  font-size: 2rem;
+  width: 570px;
+  text-align: justify;
+
+}
+
+.ds
+{
+  display: flex;
+
+  font-size: 2rem;
+  justify-content: center;
+}
+
+.ds ul
+{
+  text-align: justify;
+  padding: 0;
+}
+
+.ds ul p
+{
+  font-size: 3rem
+}
+
+
+#contact p
+{
+  font-size: 2rem;
+  margin: 40px;
+
+}
+#contact .partie
+{
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 3em;
+}
+
+form
+{
+    padding: 40px 0 40px 0;
+    text-decoration: none;
+}
+
+input[type=text]
+{
+    background: 0 0;
+    border: 0;
+    box-shadow: none;
+    border-bottom: 1px solid #18BC9C;
+    border-radius: 0;
+
+}
+
+input[type=text]:focus
+{
+    box-shadow: none;
+    border-bottom: 1px solid #2C544D;
+}
+input[placeholder]
+{
+    font-size: 2.0rem;
+}
+
+textarea[placeholder]
+{
+    font-size: 2.0rem;
+}
+
+label
+{
+    font-size: 2.0rem;
+    color: #18BC9C;
+    padding: 20px 0 20px 0;
+}
+
+#inputmessage
+{
+  background: 0 0;
+  border: 0;
+  box-shadow: none;
+  border-right: 1px solid #18BC9C;
+  border-left: 1px solid #18BC9C;
+  border-radius: 0;
+}
+
+#inputmessage:focus
+{
+  color: white;
+  background-color: #18BC9C;
+  box-shadow: none;
+  border: 0;
+  border-radius: 30px;
+}
+
+button[type=submit]
+{
+  border-radius: 30px;
+  background-color: #18BC9C;
+  border: 0;
+  color: white;
+  font-size: 2.0rem;
+  margin: 30px 0 30px 0;
+}
+
+button[type=submit]:focus
+{
+  background-color: #2C544D;
+}
+
+footer
+{
+        background-color:#282830;
+        text-align: center;
+}
+
+
+footer .fa
+{
+      font-size: 4.0rem;
+      color: #18BC9C;
+      margin-top: 0;
+      opacity: 1;
+      margin : 20px 20px 20px 20px;
+
+}
+@media screen and (max-width: 976px)
+{
+  .img-logo
+  {
+    color: white;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media screen and (max-width: 625px)
+{
+
+h1{
+  font-size: 1em
+}
+
+  .site-pusher, .content-site
+  { height: 100%;
+  }
+  .content-site
+  { overflow: hidden;
+  }
+  .site-pusher
+  {
+    transition-duration: 0.3s;
+
+  }
+
+  .resume p
+  {
+    display: flex;
+    font-size: 2rem;
+    width: 80%;
+    text-align: center;
+
+  }
+
+
+#presentation .intro-text .name-header
+{
+  font-size: 2em;
+}
+
+
+.img-fluid
+{
+  width: 200px;
+  height: 200px
+}
+  .ds ul
+  {
+    text-align: justify;
+    padding: 0;
+    width: 80%;
+  }
+
+
+header{
+   background-color: #18BC9C;
+   position: fixed;
+
+}
+nav
+{
+  position: static;
+}
+  .menu
+  {
+    display: none;
+  }
+
+
+
+    #menuToggle
+{
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 50px;
+
+  z-index: 1;
+
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+
+  cursor: pointer;
+
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+
+  background: #cdcdcd;
+  border-radius: 3px;
+
+  z-index: 1;
+
+  transform-origin: 4px 0px;
+
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/*
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  width: 100%;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color:#2C544D;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#presentation
+{
+  padding-top: 100px;
+  padding-bottom:  10px;
+}
+
+.name-header
+{
+  font-size: 2em;
+}
+.logo-name
+{
+  display: none;
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+#contact .partie, .partie
+{
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2em;
+}
+
+.li-menu
+{
+    display: block;
+}
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
+.table-image a img
+{
+    position: relative;
+    width: 100%
+
+}
+
+.categories > li
+{
+    width: 30%;
+    font-size: 10px
+}
+}
